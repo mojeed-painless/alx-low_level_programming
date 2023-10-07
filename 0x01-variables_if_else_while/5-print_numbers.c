@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *Description: 'Print alphabets lowercase'
+ *Description: 'Print numbers from 0-9'
  *Return: always 0
  */
 int main(void)
