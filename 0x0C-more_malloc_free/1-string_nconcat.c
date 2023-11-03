@@ -2,9 +2,7 @@
 #include <stdio.h>
 /**
  * _strlen - returns the length of a string
- *
  * @s: string to be measured
- *
  * Return: amount of chars in string
  */
 
@@ -22,14 +20,11 @@ int _strlen(char *s)
 /**
  * string_nconcat - a function that concatenates two strings.
  * s1, followed by the first n bytes of s
- *
  * @s1: first string
- *
  * @s2: second string
- *
  * @n: amount of bytes in s2
- *
- * Return: pointer to the concatenated string, or NULL pointer if the function fails
+ * Return: pointer to the concatenated string,
+ * or NULL pointer if the function fails
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
