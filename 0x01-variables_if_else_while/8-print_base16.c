@@ -1,22 +1,21 @@
 #include <stdio.h>
 /**
- *main - Entry point
- *Description: 'Print base 16 numbers in lowercase'
- *Return: always 0
+ * main - main block
+ * Description: Print all numbers of base64 in lowercase.
+ * Return: 0
  */
 int main(void)
 {
-	int k;
-	int j = 97;
+	char c;
+	int i;
 
-	for (k = 48; k <= 97; k++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(k);
+		putchar(i + '0');
 	}
-	while (j <= 102)
+	for (c = 'a'; c < 'g'; c++)
 	{
-		putchar(j);
-		j++;
+		putchar(c);
 	}
 	putchar('\n');
 
