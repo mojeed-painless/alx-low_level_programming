@@ -7,18 +7,22 @@
  *
  * Return: If n == 0, return 0.
  */
-int sum_them_all(const unsigned int n, ...)
+
+ int sum_them_all(const unsigned int n, ...)
 {
-	va_list va;
+	va_list valist;
 	unsigned int i;
 	int sum = 0;
 
-	va_start(va, n);
+	if (n == 0)
+		return (0);
+
+	va_start(valist, n);
 
 	for (i = 0; i < n; i++)
-		sum += va_arg(va, int);
+		sum += va_arg(valist, int);
 
-	va_end(va);
+	va_end(valist);
 
 	return (sum);
 }
